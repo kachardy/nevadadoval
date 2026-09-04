@@ -7,7 +7,7 @@ const produtosIniciais: Produto[] = [
     descricao: "O sabor clássico da praia. Água de coco geladíssima, polpa natural e leite condensado na medida certa.", 
     preco: 18.00, 
     precoPromocional: 14.99, // Exemplo de produto em promoção!
-    imagem_url: "/abacate.jpeg", 
+    imagem_url: "${import.meta.env.BASE_URL}abacate.jpeg", 
     disponivel: true 
   },
   { 
@@ -15,7 +15,7 @@ const produtosIniciais: Produto[] = [
     nome: "Nevada de Morango", 
     descricao: "Nossa nevada tradicional batida com pedaços frescos de morango e finalizada com calda.", 
     preco: 17.50, 
-    imagem_url: "/morango.jpeg", 
+    imagem_url: "${import.meta.env.BASE_URL}morango.jpeg", 
     disponivel: true 
   },
   { 
@@ -23,7 +23,7 @@ const produtosIniciais: Produto[] = [
     nome: "Nevada de Maracujá", 
     descricao: "O equilíbrio perfeito: o azedinho refrescante do maracujá com a cremosidade do leite condensado.", 
     preco: 16.00, 
-    imagem_url: "/maracuja.jpeg", 
+    imagem_url: "${import.meta.env.BASE_URL}maracuja.jpeg", 
     disponivel: true 
   },
   { 
@@ -31,7 +31,7 @@ const produtosIniciais: Produto[] = [
     nome: "Nevada Ovomaltine", 
     descricao: "A queridinha gourmet! Leite Ninho batido na nevada e copo generosamente lambuzado com Nutella.", 
     preco: 22.50, 
-    imagem_url: "/ovomaltine.jpeg", 
+    imagem_url: "${import.meta.env.BASE_URL}ovomaltine.jpeg", 
     disponivel: true 
   }
 ];

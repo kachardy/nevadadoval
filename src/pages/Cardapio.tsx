@@ -167,7 +167,7 @@ export function Cardapio() {
           
           {/* Logo da Loja (Igual para ambos) */}
           <a className="navbar-brand m-0" href="#">
-            <img src="/logo.jpeg" alt="Nevada do Val" style={{ height: '70px', width: 'auto', objectFit: 'contain' }} />
+            <img src={`${import.meta.env.BASE_URL}logo.jpeg`} alt="Nevada do Val" style={{ height: '70px', width: 'auto', objectFit: 'contain' }} />
           </a>
           
           {/* VERSÃO DESKTOP (Aparece apenas em telas médias e grandes) */}

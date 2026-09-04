@@ -1,0 +1,111 @@
+/* src/index.css */
+:root {
+  --cor-primaria: #0d5538;    
+  --cor-secundaria: #f9d832;  
+  --cor-fundo: #f3f7f5;       
+  --cor-card: #ffffff;
+  --cor-texto: #334155;
+  --cor-texto-botao: #0d5538; 
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Utilitários de marca */
+.bg-marca {
+  background-color: var(--cor-primaria) !important;
+}
+
+.text-marca {
+  color: var(--cor-primaria) !important;
+}
+
+.bg-secundaria {
+  background-color: var(--cor-secundaria) !important;
+}
+
+.btn-marca {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto-botao);
+  font-weight: 700;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-marca:hover {
+  background-color: #e2c226;
+  color: var(--cor-texto-botao);
+  transform: translateY(-1px);
+}
+
+/* Efeito profissional nos cartões de produtos */
+.produto-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: var(--cor-card);
+}
+
+.produto-card:active {
+  transform: scale(0.98); /* Feedback tátil ao tocar no celular */
+}
+
+.produto-img {
+  height: 200px;
+  object-fit: cover;
+  background-color: #e9ecef;
+}
+
+/* Hero Section Responsiva */
+.hero-section {
+  background: linear-gradient(135deg, var(--cor-primaria) 0%, #063326 100%);
+  border-bottom: 4px solid var(--cor-secundaria);
+}
+
+/* --- MELHORIAS EXCLUSIVAS PARA MOBILE --- */
+@media (max-width: 768px) {
+  /* Títulos adaptados para telas menores */
+  .hero-section h1 {
+    font-size: 2.2rem !important;
+  }
+  
+  .hero-section p {
+    font-size: 0.95rem !important;
+  }
+
+  /* Garante que os cards ocupem bem o espaço no celular */
+  .container {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  /* Aumenta a área de toque dos botões em dispositivos móveis */
+  .btn {
+    padding: 10px 16px;
+  }
+  
+  /* Ajusta tamanho dos modais para preencher melhor a tela do celular */
+  .modal-dialog {
+    margin: 10px;
+  }
+}
+
+/* Evita zoom automático ao focar em inputs no iOS/Android */
+input[type="text"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+  font-size: 16px !important;
+}

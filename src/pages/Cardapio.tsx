@@ -226,7 +226,7 @@ export function Cardapio() {
               <div className="position-relative d-inline-block">
                 <div className="position-absolute top-50 start-50 translate-middle rounded-circle bg-warning opacity-25" style={{ width: '320px', height: '320px', filter: 'blur(35px)' }}></div>
                 <img 
-                  src="/maracuja.jpeg" 
+                  src={`${import.meta.env.BASE_URL}maracuja.jpeg`} 
                   alt="Copo de Nevada" 
                   className="img-fluid rounded-4 shadow-lg position-relative" 
                   style={{ transform: 'rotate(3deg)', border: '5px solid white', maxWidth: '280px', objectFit: 'cover' }} 
